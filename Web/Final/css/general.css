@@ -1,0 +1,578 @@
+*{
+  font-family: 'Roboto',sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: white;
+}
+a:link{
+  color:white;
+}
+h1{
+  text-align: center;
+}
+/*-------------HEADER------------------*/
+.header{
+display: block;
+width: 90%;
+height: 8%;
+position: fixed;
+background-color:rgb(102, 119, 1);
+-webkit-box-shadow: 0 0 10px 5px rgba(123,123,123,.50);
+box-shadow: 0 0 10px 5px rgba(123,123,123,.50);
+top: 0;
+left: 0;
+margin-left: 5%;
+margin-right: 5%;
+z-index: 10;
+border-radius: 10px;
+}
+.op{
+  display:block;
+  width: 15%;
+  height: 100%
+  text-align: center;
+  float: left;
+  position: relative;
+  font-size: 2.8em;
+  color:white;
+  top:0;
+}
+.logo{
+  display: block;
+  width: 5%;
+  height: 115%;
+  float: left;
+}
+.po{
+  display:block;
+  color:white;
+  width: 15%;
+  height: 100%
+  text-align: center;
+  float: right;
+  position: relative;
+  top:0;
+  font-size: 40px;
+}
+.ftip{height: 100%;}
+ .ftip:hover{
+  background-color:rgb(39, 156, 7);
+}
+.Mtipo{
+  /*border:1px solid black;*/
+  background-color: rgba(43, 117, 77,.8);
+  position: fixed;
+  height: auto;
+  width: 10%;
+  margin-top: 3.3%;
+  margin-left: 22%;
+  text-align: center;
+  display: none;
+  color: white;
+  z-index: 100;
+}
+.Msabor{
+  /*border:1px solid black;*/
+  background-color: rgba(43, 117, 77,.8);
+  position: fixed;
+  height: auto;
+  width: 10%;
+  margin-top: 3.3%;
+  margin-left: 36%;
+  text-align: center;
+  display: none;
+  color: white;
+  z-index: 100;
+}
+.Mtiempo{
+  /*border:1px solid black;*/
+  background-color: rgba(43, 117, 77,.8);
+  position: fixed;
+  height: auto;
+  width: 10%;
+  margin-top: 3.3%;
+  margin-left: 50%;
+  text-align: center;
+  display: none;
+  color: white;
+  z-index: 100;
+}
+.Muser{
+  background-color: rgba(43, 117, 77,.8);
+  position: fixed;
+  height: auto;
+  width: 10%;
+  margin-top: 3.3%;
+  margin-left: 50%;
+  text-align: center;
+  display: none;
+  color: white;
+  z-index: 100;
+}
+.confi{
+  cursor: pointer;
+}
+.MUser{
+  background-color: rgba(43, 117, 77,.8);
+  position: fixed;
+  height: auto;
+  width: 10%;
+  margin-top: 3.3%;
+  margin-left: 80%;
+  text-align: center;
+  display: none;
+  color: white;
+  z-index: 10;
+}
+/*--------------------------LOGIN----------------------------*/
+.MLogin{
+  border:1px solid black;
+  background-color: rgba(43, 117, 77,.8);
+  position: fixed;
+  height: auto;
+  width: 25%;
+  height: 23%;
+  margin-top: 3.3%;
+  margin-right: 5%;
+  margin-left: 70%;
+  text-align: center;
+  border-radius: 20px;
+  display: none;
+  font-size: 25px;
+  z-index: 10;
+}
+.email{
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.Earea{
+  margin-right: 19%;
+  color: white;
+}
+.logArea{
+  color: white;
+}
+.password{
+  margin-bottom: 5%;
+}
+.LogBut{
+  margin-left: 25%;
+}
+.modal{
+  font-size: 20px;
+
+}
+/*-------------CONTENIDO DE LAS CONSULTAS-------------------*/
+.contenido{
+  display: block;
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 800px;
+  /*border: 1px solid black;*/
+  border-radius: 10px;
+  float: left;
+}
+/*-------------------------Ventanas modales-----------------------*/
+/*--------------------------Registro-------------------------------*/
+.registro{
+  width: 30%;;
+  height: 50%;
+  position: relative;
+  margin-top: 10%;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding: 5px 20px 13px 20px;
+  background: #fff;
+  border-radius:20px;
+  font-size: 20px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+.Rnombre{
+  margin-left: 27%;
+  margin-bottom: 2%;
+}
+.Remail{
+  margin-left: 34%;
+  margin-bottom: 2%;
+}
+.Rpass{
+  margin-left: 21%;
+  margin-bottom: 2%;
+}
+.Rconfirm{
+  margin-bottom: 9%;
+}
+/*.Rimg{
+  margin-bottom: 20%;
+}*/
+.Rbutton{
+  margin-left: 38%;
+  height: 7%;
+}
+.movedown {
+    margin: 0 auto;
+
+}
+.fondoModal:target .movedown{
+    margin:10% auto;
+}
+.fondoModal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.fondoModal:target{
+  opacity: 1;
+  pointer-events: auto;;
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 3px;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+
+}
+.close:hover {
+    background: #FAAC58;
+    color:#222;
+}
+/*---------------------Fin Registro----------------*/
+/*----------------------NewRecipe------------------*/
+.MReceta{
+  width: 40%;;
+  height: 70%;
+  position: relative;
+  margin-top: 8%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 5px 20px 13px 20px;
+ background:#fff;
+  border-radius:20px;
+  font-size: 20px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+.imgR{
+  display: block;
+  width: 40%;
+  height: 30%;
+  float: left;
+  margin: 10% 30% ;
+  background:#fff;
+  text-align: center;
+   border-radius:20px;
+   font-size: 20px;
+   -webkit-transition: all 500ms ease-in;
+   -moz-transition: all 500ms ease-in;
+   transition: all 500ms ease-in;
+}
+#Nrecipe:target{
+  opacity: 1;
+   pointer-events:auto;
+}
+.fondoModal2{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.close2{
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: 3px;
+  text-align: center;
+  top: 1px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius:3px;
+}
+.close2:hover{
+  background: #FAAC58;
+  color:#222;
+}
+.fondoModal2:target .movedown{
+    margin:10% auto;
+}
+
+/*----------------------Agregar receta---------------*/
+
+.MReceta{
+display: block;
+width: 70%;
+height: 85%;
+margin:5% 15% 10% 15% ;
+float: left;
+}
+.preparacion{
+  display: block;
+  float: left;
+  margin: 0% 0% 0% 2%;
+  text-align: center;
+}
+.pretxt{
+  /*background-color: rgb(190, 167, 60);*/
+}
+.Rname{
+  height: 50px;
+  width: 80%;
+  margin: 0% 10%;
+  text-align: center;
+  font-size:30px;
+/*  background-color: rgb(190, 167, 60);*/
+}
+.IngC{
+  display: block;
+  width: 30%;
+  height: 80%;
+  float: left;
+  text-align: center;
+}
+.ingB{
+  display: block;
+  width: 90%;
+  height: 50%;
+  border: .5px solid grey ;
+  margin: 0% 0% 0% 8%;
+  /*background-color: rgb(190, 167, 60);*/
+/*  overflow-y: scroll; */
+}
+.ingcant{
+  float: left;
+  display: block;
+  width: 50%;
+  margin-bottom: 5%;
+}
+.num{
+  display: block;
+  width: 72%;
+  float: left;
+  margin-bottom: 10%;
+}
+.ingcant h5{
+  text-align:left;
+  width: 50%;
+  margin: 0px;
+    margin: 0% 0% 10% 0%;
+}
+.ingmed h5{
+  text-align:left;
+  width: 50%;
+  margin: 0% 0% 10% 0%;
+}
+.ingmed{
+  float: left;
+  width: 50%;
+}
+.med{
+  float: left;
+  display: block;
+  margin-bottom: 10%;
+}
+.cantymed{
+  width: 90%;
+  display: block;
+  margin: 15% 15%;
+  height: 30%;
+}
+.tercero{
+  display: block;
+  float: left;
+  text-align: center;
+  height: 90%;
+  width: 30%;
+  margin: 0% 0% 0% 5%;
+}
+.cont{
+  display: block;
+  width: 100%;
+  height: 10%;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+.tiempo{
+  display: block;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  float: left;
+}
+.tiempo select{
+  float: left;
+  margin-bottom: 10%;
+}
+.tipo{
+  display: block;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  float: left;
+}
+.tipo h5{
+  display: block;
+  text-align: center;
+  float:left;;
+  margin:0;
+}
+.ingri{
+  display: block;
+  width: 90%;
+  height: 40%;
+  margin: 15% 0% 5%;
+  border: .5px solid grey;
+  overflow-y: scroll;
+}
+.printI{
+  display: block;
+  width: 100%;
+  height: 10%;
+
+}
+.menos{
+  font-size:20px;
+}
+.menos:hover{
+  color:rgb(231, 9, 9);
+}
+.picture{
+  display: block;
+  height: 30%;
+  width: 100%;
+  margin: 10% 0%;
+}
+a.NRC{
+  -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    color: black;
+    text-decoration: none;
+    background:#606061;
+}
+/*---------------Agregar.Ingrediente---------------*/
+.addI{
+  display: block;
+  margin-top: 75%;
+  margin-left: 95%;
+  font-size:35px;
+  color:rgb(34, 138, 177);
+  z-index:999;
+}
+.addI:hover{
+  color: rgb(252, 10, 134);
+}
+.ADD{
+  display:none;;
+  width: 100%;
+  height: 30%;
+  margin-top: 60%;
+  background-color:rgb(102, 119, 1);
+}
+.intext{
+  width: 80%;
+  margin: 0% 10%;
+  text-align: center;
+}
+.cargaI{
+  display: block;
+  float: left;
+  width:auto;
+  background-color: rgb(69, 71, 59);
+  margin:.5%;
+  border-radius: 10px;
+  color: rgb(190, 167, 60);
+}
+.portada{
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+  height:20%;
+  width:20%;
+  margin: 2.5%;
+  position: relative;
+  float: left;
+  background-color:rgb(37, 149, 179);
+}
+/*------------------------3am--------------------------*/
+.carga{
+  margin: 0% 0%;
+  width: 100%;
+  height: 65%;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+.carga:hover{
+  opacity: 1;
+}
+/*----------------------Carga-Receta--------------------------------*/
+.fondo3{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  opacity: 1;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.reci{
+  display: block;
+  width: 40%;
+  height: 50%;
+  background-color: #fff;
+  border-radius: 25px;
+  margin: 10% 30%;
+}
+.reciP{
+  text-align: center;
+  display: block;
+  float: left;
+  width: 35%;
+  height: 75%;
+}
+.reciI{
+  text-align: center;
+  display: block;
+  float: left;
+  width: 35%;
+  height: 75%;
+}

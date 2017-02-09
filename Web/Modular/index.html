@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div  id="statsModule">
+        <h3>Stats</h3>
+        <script id="stats-template" type="text/template">
+            <h3>People</h3>
+            {{people}}
+        </script>
+    </div>
+    <div id="peopleModule">
+            <h1>People</h1>
+            <input placeholder="name" type="text">
+            <button id="addPerson">Add Person</button>
+            <ul id="people">
+                <script id="people-template" type="text/template">
+                    {{#people}}
+                        <li>
+                            <span>{{.}}</span>
+                            <i class="del">X</i>
+                        </li>
+                    {{/people}}
+                </script>
+            </ul>
+
+        </div>
+    <!--Javascript-->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script src="https://raw.githack.com/janl/mustache.js/master/mustache.min.js"></script>
+    <script type="text/javascript" src="js/stats.js"></script>
+    <script type="text/javascript" src="js/revelingModule.js"></script>
+  </body>
+</html>

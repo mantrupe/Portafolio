@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://fb.me/react-0.13.3.min.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script> -->
+    <meta charset="utf-8">
+    <style type="text/css">
+      div {
+        background-color: blue;
+        height:200px;
+        width:200px;
+      }
+    </style>
+    <title>Component Lifecycle</title>
+  </head>
+  <body>
+    <script type = "text/jsx">
+     var Box= React.createClass({
+       componentWillMount:function(){
+         alert("Component is about to mount");
+       },
+       componentDidMount:function(){
+         alert("Component did mount ");
+       },
+       render : function(){
+         return <div></div>;
+       }
+     });
+      React.render(<Box />,document.body);
+
+      var getRidOfBox = document.getElementsByTagName('div')[0];
+      getRidOfBox.onclick = function(){
+        React.unmountComponentAtNode(document.body);
+        alert("The component was unmounted");
+      }
+    </script>
+  </body>
+</html>

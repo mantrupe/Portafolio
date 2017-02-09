@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pfinal</string>
+    <string-array name="intensidad">
+        <item>Baja</item>
+        <item>Alta</item>
+    </string-array>
+    <string-array name="Baja">
+        <item>Yoga</item>
+        <item>IronMan</item>
+    </string-array>
+    <string-array name="Alta">
+        <item>Thor</item>
+        <item>Hulk</item>
+    </string-array>
+</resources>
